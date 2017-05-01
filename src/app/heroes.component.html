@@ -1,0 +1,30 @@
+<h2>My Heroes</h2>
+<div>
+    <!--<label>Hero name:</label><input #heroName/>-->
+    <md-input-container>
+        <input mdInput #heroName placeholder="Hero name">
+    </md-input-container>
+    <!--<button (click)="add(heroName.value);heroName.value=''">
+        Add
+    </button>-->
+    <a md-mini-fab color="primary"
+       (click)="add(heroName.value);heroName.value=''"><md-icon>add</md-icon></a>
+</div>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+        [class.selected]="hero === selectedHero">
+        <span class="badge">{{hero.id}}</span>
+        <span>{{hero.name}}</span>
+        <!--<button class="delete" (click)="delete(hero);$event.stopPropagation();">x</button>-->
+        <button md-icon-button (click)="delete(hero);$event.stopPropagation();">
+            <md-icon class="md-24">delete</md-icon>
+        </button>
+    </li>
+</ul>
+<!--<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name | uppercase}} is my hero</h2>
+    <button md-icon-button>
+        <md-icon class="md-24">info_outline</md-icon>
+    </button>
+    <button (click)="gotoDetail()">View Details</button>
+</div>-->

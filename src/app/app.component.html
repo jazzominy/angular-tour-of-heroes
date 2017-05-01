@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+    {{title}}
+    <span class="app-toolbar-filler"></span>
+</md-toolbar>
+
+<nav md-tab-nav-bar class="nav-bar">
+    <a md-tab-link
+       [routerLink]="['dashboard']"
+       [active]="activeLink === 0"
+       (click)="activeLink = 0">Dashboard</a>
+    <a md-tab-link
+       [routerLink]="['heroes']"
+       [active]="activeLink === 1"
+       (click)="activeLink = 1">Heroes</a>
+    
+    <!--<button md-raised-button
+            routerLink="/dashboard"
+            routerLinkActive="active">Dashboard</button>
+    <button md-raised-button
+            routerLink="/heroes"
+            routerLinkActive="active">Heroes</button>-->
+</nav>
+
+<md-card class="card">
+    <router-outlet></router-outlet>
+</md-card>

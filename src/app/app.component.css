@@ -1,0 +1,53 @@
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/*nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}*/
+
+.nav-bar {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.nav-bar.mat-tab-nav-bar {
+    background: #f9f9f9;
+}
+
+/*nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}*/
+
+nav button.active {
+  color: #039be5;
+}
+
+.mat-card.card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 10px 0;
+}
