@@ -25,6 +25,7 @@ h2 {
     border-radius: 4px;
     display: inline-block;
     width: 20%;
+    min-width: 200px;
 }
 
 .heroes li.selected:hover {
