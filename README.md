@@ -6,6 +6,8 @@ material2, which is currently at version 2.0.0-beta.3, is used to style the app
 
 The project was created with angular-cli
 
+Demo can be accessed [here](https://jazzominy.github.io/ng-toh)
+
 ### References
 
 * [angular.io tutorial](https://angular.io/docs/ts/latest/tutorial/)
