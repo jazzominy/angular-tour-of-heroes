@@ -6,7 +6,7 @@ material2, which is currently at version 2.0.0-beta.3, is used to style the app
 
 The project was created with angular-cli
 
-###References
+### References
 
 * [angular.io tutorial](https://angular.io/docs/ts/latest/tutorial/)
 * [material2](https://github.com/angular/material2)
